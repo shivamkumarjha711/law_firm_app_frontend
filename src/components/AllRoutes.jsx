@@ -13,7 +13,6 @@ import Tax from "../pages/Tax";
 function AllRoutes() {
   return (
     <>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="aboutUs" element={<About />} />
@@ -26,7 +25,6 @@ function AllRoutes() {
           <Route path="team" element={<Team />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </BrowserRouter>
     </>
   );
 }
