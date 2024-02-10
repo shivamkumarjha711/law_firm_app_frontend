@@ -8,7 +8,7 @@ import { IoIosArrowDropdown } from "react-icons/io"
 function Navbar() {
   const [isDropDownOpen, setDropDownOpen] = useState(false);
 
-  const toggleDropDown = () => {
+  const mouseEnterHandle = () => {
     setDropDownOpen(!isDropDownOpen)
   };
 
@@ -23,7 +23,7 @@ function Navbar() {
           <li><Link className="link" to={"#"}>ABOUT US</Link></li>
           <li><Link className="link" to={"#"}>TEAM</Link></li>
           <li><Link className="link" to={"#"}>CONTACT</Link></li>
-          <li onClick={toggleDropDown}><Link className="link">SERVICE <IoIosArrowDropdown /></Link>
+          <li onClick={mouseEnterHandle}><Link className="link">SERVICE <IoIosArrowDropdown /></Link>
           {
             isDropDownOpen ? (
               <div className="drop_down_container">
