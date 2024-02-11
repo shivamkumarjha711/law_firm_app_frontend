@@ -3,10 +3,13 @@ import AllRoutes from "./components/AllRoutes";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import React from "react";
+import Header from "./components/Header";
+
 
 function App() {
   return (
     <>
+      <Header />
       <Navbar />
       <AllRoutes />
       <Footer />
@@ -14,4 +17,8 @@ function App() {
   );
 }
 
+
 export default App;
+
+
+
