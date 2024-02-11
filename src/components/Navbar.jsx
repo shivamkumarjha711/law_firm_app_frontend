@@ -15,15 +15,14 @@ function Navbar() {
   return (
     <div className="container">
       <div>
-        <img className="main_image" src={logo}></img>
+        <Link to={"/"}><img className="main_image" src={logo}></img></Link>
       </div>
 
       <div className="link_container">
         <ul className="navbar_link">
-          <li><Link className="link" to={"#"}>ABOUT US</Link></li>
-          <li><Link className="link" to={"#"}>TEAM</Link></li>
-          <li><Link className="link" to={"#"}>CONTACT</Link></li>
-          <li onClick={mouseEnterHandle}><Link className="link">SERVICE <IoIosArrowDropdown /></Link>
+          <li><Link className="link" to={"/aboutUs"}>ABOUT US</Link></li>
+          <li><Link className="link" to={"/team"}>TEAM</Link></li>
+          <li onClick={mouseEnterHandle}><div><Link className="link">SERVICES</Link></div>
           {
             isDropDownOpen ? (
               <div className="drop_down_container">
@@ -39,14 +38,14 @@ function Navbar() {
             )
           }
           </li>
-          <li><Link className="link" to={"#"}>GALLERY</Link></li>
-          <li><Link className="link" to={"#"}>CAREER</Link></li>
-          <li><Link className="link" to={"#"}>CONTACT US</Link></li>
+          <li><Link className="link" to={"/gallery"}>GALLERY</Link></li>
+          <li><Link className="link" to={"/career"}>CAREER</Link></li>
+          <li><Link className="link" to={"/contactUs"}>CONTACT US</Link></li>
         </ul>
       </div>
 
       <div className="btn">
-        <Button text={"Sign Up"} />
+        <Button text={"Signup"} />
         <Button text={"Login"} />
       </div>
     </div>

@@ -10,13 +10,13 @@
 }
 
 .main_image {
-    width: 160px;
+    width: 110px;
 }
 
 .navbar_link {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
 }
 
 .drop_down_link {
@@ -28,6 +28,7 @@
     border-radius: 10px;
     padding: 5px;
     margin-top: 10px;
+    z-index: 100;
 }
 
 .drop_down_link li {
@@ -38,7 +39,14 @@
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+    font-size: medium;
     list-style: none;
+}
+
+.link:hover {
+    background-color: var(--hover-color);
+    padding: 7px 12px;
+    border-radius: 5px;
 }
 
 .btn {

@@ -4,9 +4,9 @@
     background-color: var(--third-color);
     color: white;
     font-weight: bold;
-    font-size: large;
+    font-size: medium;
     border-radius: 5px;
-    padding: 10px 22px;
+    padding: 8px 18px;
     cursor: pointer;
     text-align: center;
 }
