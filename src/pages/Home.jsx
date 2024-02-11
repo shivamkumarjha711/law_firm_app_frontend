@@ -1,5 +1,6 @@
 import React from "react";
 import HelmetSEO from "../components/HelmetSEO";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
