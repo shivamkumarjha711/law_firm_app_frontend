@@ -9,6 +9,8 @@ import Gallery from "../pages/Gallery";
 import Services from "../pages/Services";
 import Team from "../pages/Team";
 import Tax from "../pages/Tax";
+import Signup from "../pages/Signup";
+import Login from "../pages/Login";
 
 function AllRoutes() {
   return (
@@ -23,6 +25,8 @@ function AllRoutes() {
             <Route path="tax" element={<Tax />} />
           </Route>
           <Route path="team" element={<Team />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>
     </>

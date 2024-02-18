@@ -20,6 +20,7 @@ function Navbar() {
 
       <div className="link_container">
         <ul className="navbar_link">
+          <li><Link className="link" to={"/"}>HOME</Link></li>
           <li><Link className="link" to={"/aboutUs"}>ABOUT US</Link></li>
           <li><Link className="link" to={"/team"}>TEAM</Link></li>
           <li onClick={mouseEnterHandle}><div><Link className="link">SERVICES</Link></div>
@@ -44,9 +45,11 @@ function Navbar() {
         </ul>
       </div>
 
+      
+
       <div className="btn">
-        <Button text={"Signup"} />
-        <Button text={"Login"} />
+        <Link to={"/signup"}><Button text={"Signup"} /></Link>
+        <Link to={"/login"}><Button text={"Login"} /></Link>
       </div>
     </div>
   );

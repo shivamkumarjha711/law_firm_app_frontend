@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import second from "../assets/first.jpg";
 import first from "../assets/second.jpg";
 import third from "../assets/third.jpg";
@@ -28,6 +28,14 @@ function Slider() {
     }
   };
 
+  useEffect(() => {
+    const sliderInterval = setInterval(() => {
+        handleForwClick()
+    }, 3000);
+
+    return () => clearInterval(sliderInterval)
+  }, [currentImage])
+  
 
   return (
     <div>

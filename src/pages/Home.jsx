@@ -23,9 +23,8 @@ function Home() {
         {/* // Slider Component  */}
         <Slider />
 
-
         {/* // First Content  */}
-        <div className="bg-gray-200 px-24 py-24 flex flex-row gap-20">
+        <div className="bg-gray-100 px-24 py-24 flex flex-row gap-20 mt-5">
           <div className="w-[50%]">
             <h4 className="text-2xl font-bold">
               WELCOME TO CORPBASE CONSULTANCY LLP
@@ -102,7 +101,7 @@ function Home() {
                 <div className="bg-black rounded-lg px-20 py-7 flex flex-col justify-center items-center">
                   <span
                     class="material-symbols-outlined text-green-600"
-                    style={{ fontSize: "50px", marginBottom: "11px" }}
+                    style={{ fontSize: "5px", marginBottom: "11px" }}
                   >
                     domino_mask
                   </span>
