@@ -9,8 +9,8 @@ import Gallery from "../pages/Gallery";
 import Services from "../pages/Services";
 import Team from "../pages/Team";
 import Tax from "../pages/Tax";
-import Signup from "../pages/Signup";
-import Login from "../pages/Login";
+import Signup from "./Signup";
+import Login from "./Login";
 
 function AllRoutes() {
   return (

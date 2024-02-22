@@ -1,11 +1,22 @@
 import React from 'react'
+import { RxCrossCircled } from 'react-icons/rx'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="m-5 md:my-16 md:mx-24 flex flex-col justify-center items-center md:flex-row gap-4 md:gap-24">
-        <div className="md:w-[55%]">
-            <h4 className="text-3xl font-bold">Sign Up</h4>
-            <div className="h-1 bg-green-600 rounded-full w-24 mt-2 mb-11"></div>
+    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50">
+          <div className="bg-white w-96 p-4 rounded shadow-lg">
+              <div className='flex justify-between'>
+            <div>
+              <h4 className="text-3xl font-bold">Sign Up</h4>
+              <div className="h-1 bg-green-600 rounded-full w-24 mt-2 mb-11"></div>
+            </div>
+              <div className='mt-2 mr-5 text-3xl'>
+                <button onClick={() => navigate(-1)}><RxCrossCircled /></button>
+              </div>
+            </div>
             <form className="flex flex-col gap-6">
                 <input
                 type="text"
